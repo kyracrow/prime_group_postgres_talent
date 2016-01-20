@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="talentAgency">
+<head>
+    <meta charset="UTF-8">
+    <title>Postgres Group</title>
+    <script src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/client.js"></script>
+</head>
+<body ng-controller="MainController">
+<h2>M'Lazer!!!!!!!!</h2>
+
+
+<form novalidate>
+    First Name: <input type="text" ng-model="talent.firstname"/><br>
+    Last Name: <input type="text" ng-model="talent.lastname"/><br>
+    Phone: <input type="number" ng-model="talent.phone"/><br>
+    Salary Min: <input type="number" ng-model="talent.lowrange"/><br>
+    Salary Max: <input type="number" ng-model="talent.highrange"/><br>
+
+    <label ng-repeat="skill in skills">
+        <input type="checkbox" checklist-model="talent.skills" checklist-value="skill"/> {{skill}}
+    </label><br>
+    <input type="submit" ng-click="submitTalent(talent)" value="submit"/>
+</form>
+
+
+
+
+
+
+</body>
+</html>
