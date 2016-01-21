@@ -1,0 +1,16 @@
+body{
+    background-color: #00acb0;
+}
+.container {
+    text-align: center;
+}
+input {
+    border: 1px solid #00acb0;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+.submit {
+    background-color: #fff;
+
+}
